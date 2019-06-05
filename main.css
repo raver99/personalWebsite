@@ -1,0 +1,58 @@
+body{
+    margin: 0px;
+}
+
+.header{
+    background-color: black;
+    background-image: url('res/nameBackground.svg');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 95vh;
+}
+
+.header-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 50pt;
+    padding-bottom: 30pt;
+    height: 60%; 
+    max-width: 90vw;
+}
+
+.second-container{
+    height: 700pt;
+}
+
+.light-button{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: black;
+    height: 30pt;
+    width: 120pt;
+    border-radius: 5pt;
+    border-width: 0pt;
+    outline: none;
+}
+
+.light-button:hover{
+        opacity: 0.8;
+        transition: all 0.2s;
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+}
+
+.header .light-button{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
