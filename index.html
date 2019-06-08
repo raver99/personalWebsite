@@ -2,19 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <title>Hello, world!</title>
 </head>
 <body>
-    <div class="header">
-        <img class="header-logo" src="res/logo.svg" alt="Logo">
-        <button class="light-button">Get in Touch</button>
-    </div>
+    <div>
+        <div id="mySidenav" class="sidenav">
+            <div class="sidenavContainer">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+                
+        </div>
 
-    <div class="second-container">
+        <button id="menuButton" class="menu-button">
+                <img src="res/menu.svg" alt="menu"/>
+        </button>
 
+        <div class="header">
+            <img class="header-logo" src="res/logo.svg" alt="Logo">
+            <button class="light-button">Get in Touch</button>
+        </div>
+
+        <div class="second-container">
+            <h1 class="header-title">my services</h1>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 iconAndText">
+                        <img src="res/icon_mobile.svg">
+                        <h4>Mobile App Development</h4>
+                    </div>
+                    <div class="col-md-6 iconAndText">
+                        <img src="res/icon_software.svg">
+                        <h4>Custum Software Solutions</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 iconAndText">
+                        <img src="res/icon_product.svg">
+                        <h4>Product Development</h4>
+                    </div>
+                    <div class="col-md-6 iconAndText">
+                        <img src="res/icon_ux.svg">
+                        <h4>UI/UX Concepting</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 iconAndText">
+                        <img src="res/icon_mvp.svg">
+                        <h4>Proof of Concept / MVPs</h4>
+                    </div>
+                    <div class="col-md-6 iconAndText">
+                        <img src="res/icon_consulting.svg">
+                        <h4>Strategic Technical Consulting</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-container">
+            <img class="iphone" 
+                 src="res/iphone.png"
+                 data-300v="transform: translate(0%, 0%)" 
+                 data-600v="transform: translate(100%, 100%)">
+        </div>
+
+        <div class="scroll-helper">
+
+        </div>
     </div>
+    <script type="text/javascript" src="js/skrollr.js"></script>
+	<script type="text/javascript">
+	    var s = skrollr.init();
+	</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 </html>
