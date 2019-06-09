@@ -173,19 +173,45 @@ button:hover{
 /* projects slide */
 
 .projects-container{
-    height: 100vh;
-    padding-top: 30px;
+    height: 500vh;
+    padding-top: 100px;
     background-color: black;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    justify-content: center; */
+    /* overflow: hidden; */
 }
+
+/* .iphone{
+    height: 50;
+    top:50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
 
 .iphone{
-    height: 100%;
+    top:auto;
+    left:auto;
+    bottom: auto;
+    right:auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    display: block;
 }
 
-/* .scroll-helper{
-    height: 200vh;
-} */
+.sticky-container{
+    /* position: sticky; */
+    top:50px;
+}
+
+.scroll-helper{
+    height: 100vh;
+}
+
+/* third slide  */
+
+.third-container{
+    height: 100vh;
+}
