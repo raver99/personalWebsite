@@ -21,6 +21,7 @@ button:focus {
     overflow-x: hidden;
     transition: 0.5s;
     text-align:center;
+    z-index: 1001;
   }
 
   .sidenav-bottom{
@@ -115,6 +116,7 @@ button:focus {
     top: 20pt;
     right: 20pt;
     outline: none;
+    z-index: 1000;
     
     transition: transform 0.5s, opacity 0.2s;
     transition-timing-function: ease-out
@@ -182,25 +184,6 @@ button:hover{
     /* overflow: hidden; */
 }
 
-/* .iphone{
-    height: 50;
-    top:50px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
-.iphone{
-    top:auto;
-    left:auto;
-    bottom: auto;
-    right:auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    /* display: block; */
-}
-
 .sticky-container{
     /* position: sticky; */
     position: relative;
@@ -216,72 +199,46 @@ button:hover{
     right:auto;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    height: 70vh;
+    width: 300px;
     display: block;
 }
 
-.appIconContainer {
-    position: absolute;
-    overflow: hidden;
-    width: 40px;
-    height: 40px;
-}
-
-.appIconContainer:hover{
-    opacity: 0.8;
-}
-
-.apps-container{
-    position: absolute;
-    overflow: hidden;
-    top: 50px;
-    left: 50px;
-    width: 100%;
-    height: 100%;
-}
-
-#firstIcon{
-    top: 30px;
-    left: 35px;
-}
-
-#secondIcon{
-    top: 30px;
-    left: 85px;
-}
-
-#thirdIcon{
-    top: 30px;
-    left: 135px;
-}
-
-#fourthIcon{
-    top: 80px;
-    left: 35px;
-}
-
-#fifthIcon{
-    top: 80px;
-    left: 85px;
-}
-
-#sixthIcon{
-    top: 80px;
-    left: 135px;
-}
-
-.appImage{
-    display: block;
+.iphone{
+    top:auto;
+    left:auto;
+    bottom: auto;
+    right:auto;
     margin-left: auto;
     margin-right: auto;
-    width: 80%; 
-    height: 80%;   
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    /* display: block; */
 }
 
-.appName{
-    text-align: center;
+#iphone-apps{
+    opacity: 0;
+}
+
+.projects-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    opacity: 0;
+}
+
+.project-header-text{
+    /* position: absolute; */
+    position: relative;
     color: white;
-    font-size: 7px;
+    z-index: 2000;
+    top:50px;
+    left: 60%;
+    display: block;
 }
 
 .scroll-helper{

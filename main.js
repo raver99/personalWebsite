@@ -21,7 +21,7 @@ $(document).ready(function () {
       var controller = new ScrollMagic.Controller();
 
       //sticky scene
-      var scene = new ScrollMagic.Scene({triggerElement: "#sticky-container", duration: 5000})
+      var scene = new ScrollMagic.Scene({triggerElement: "#sticky-container", duration: "400%"})
       scene.triggerHook(0.1);
       scene.setPin("#sticky-container")
       .addIndicators({name: "pin"}) // add indicators (requires plugin)
@@ -35,12 +35,17 @@ $(document).ready(function () {
       var fadeInTo = TweenMax.to("#iphone", 1, {
           scale: 1, transformOrigin:'50% 0%'
       });
-      var tweenTranslate = TweenMax.to('#iphone-container', 1, { css: { transform: 'translate3d(-30%, 0 , 0)' }})
+      var tweenTranslate = TweenMax.to('#iphone-container', 1, { css: { transform: 'translate3d(-30%, 0 , 0)' }});
+
+      var tweenFade = TweenMax.to('#iphone-apps', 1, { css: { opacity: 1}});
+      var tweenFade2 = TweenMax.to('#projects-text', 1, { css: { opacity: 1}});
 
       fadeInTimeline
           .add(fadeInFrom)
           .add(fadeInTo)
-          .add(tweenTranslate);
+          .add(tweenTranslate)
+          .add(tweenFade)
+          .add(tweenFade2);
       
       new ScrollMagic.Scene({
               triggerElement: "#sticky-container"
