@@ -5,17 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+    
+    .parent {
+    position: relative;
+    top: 200;
+    left: 100;
+    }
+
+    .appIconContainer {
+    position: absolute;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    }
+
+    .appIconContainer:hover{
+        opacity: 0.8;
+    }
+
+    #firstIcon{
+        top: 30px;
+        left: 35px;
+    }
+
+    #secondIcon{
+        top: 30px;
+        left: 85px;
+    }
+
+    #thirdIcon{
+        top: 30px;
+        left: 135px;
+    }
+
+    #fourthIcon{
+        top: 80px;
+        left: 35px;
+    }
+
+    #fifthIcon{
+        top: 80px;
+        left: 85px;
+    }
+
+    #sixthIcon{
+        top: 80px;
+        left: 135px;
+    }
+
+    .appImage{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%; 
+        height: 80%;   
+    }
+
+    .appName{
+        text-align: center;
+        color: white;
+        font-size: 7px;
+    }
+
+    </style>
 </head>
 <body>
     
-    <div style="height: 100vh"></div>
+    <div style="height: 50vh"></div>
 
-    <div id="iphoneContainer" style="
-    position: relative;">
-        <img id="iphone" style="width: 100px; height: 100px; opacity: 0.0;" src="res/iphone.png">
+    <!-- <div id="iphoneContainer" style="position: relative;">
+        <img id="iphone" style="position: " src="res/iphone.png">
+        <img style="" src="res/app logo.svg">
+    </div> -->
+
+    <div class="parent">
+            <img src="res/iphone.png" />
+            <div id="firstIcon" class="appIconContainer">
+                <img class="appImage" src="res/app_logo.png" />
+                <div class="appName">First App</div>
+            </div>
+            <div id="secondIcon" class="appIconContainer">
+                    <img class="appImage" src="res/app_logo.png" />
+                    <div class="appName">Second App</div>
+            </div>
+            <div id="thirdIcon" class="appIconContainer">
+                    <img class="appImage" src="res/app_logo.png" />
+                    <div class="appName">Third App</div>
+            </div>
+            <div id="fourthIcon" class="appIconContainer">
+                <img class="appImage" src="res/app_logo.png" />
+                <div class="appName">First App</div>
+            </div>
+            <div id="fifthIcon" class="appIconContainer">
+                    <img class="appImage" src="res/app_logo.png" />
+                    <div class="appName">Second App</div>
+            </div>
+            <div id="sixthIcon" class="appIconContainer">
+                    <img class="appImage" src="res/app_logo.png" />
+                    <div class="appName">Third App</div>
+            </div>
     </div>
 
-    <div style="height: 500vh"></div>
+    <!-- <div style="height: 500vh"></div> -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     
@@ -26,28 +118,28 @@
     <script type="text/javascript">
         $(document).ready(function () {
             
-            var controller = new ScrollMagic.Controller();
+            // var controller = new ScrollMagic.Controller();
 
-            var fadeInTimeline = new TimelineMax();
-            // var fadeInFrom = TweenMax.from("#iphone", 10, {
-            //     opacity: 0.1, ease: Linear.easeNone
+            // var fadeInTimeline = new TimelineMax();
+            // // var fadeInFrom = TweenMax.from("#iphone", 10, {
+            // //     opacity: 0.1, ease: Linear.easeNone
+            // // });
+            // var fadeInTo = TweenMax.to("#iphone", 10, {
+            //     autoAlpha: 1
             // });
-            var fadeInTo = TweenMax.to("#iphone", 10, {
-                autoAlpha: 1
-            });
-            // fadeInTimeline
-            //     .add(fadeInFrom)
-            //     .add(fadeInTo);
+            // // fadeInTimeline
+            // //     .add(fadeInFrom)
+            // //     .add(fadeInTo);
 
-            // var tween = TweenMax.to("#iphone", 1, {rotation: 360, ease: Linear.easeNone});
+            // // var tween = TweenMax.to("#iphone", 1, {rotation: 360, ease: Linear.easeNone});
             
-            new ScrollMagic.Scene({
-                    triggerElement: "#iphone",
-                    duration:500
-                })
-            .setTween(fadeInTo)
-            .addIndicators({name: "fade in"}) // add indicators (requires plugin)
-            .addTo(controller);
+            // new ScrollMagic.Scene({
+            //         triggerElement: "#iphone",
+            //         duration:500
+            //     })
+            // .setTween(fadeInTo)
+            // .addIndicators({name: "fade in"}) // add indicators (requires plugin)
+            // .addTo(controller);
 
         });
     </script>

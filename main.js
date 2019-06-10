@@ -21,37 +21,13 @@ $(document).ready(function () {
       var controller = new ScrollMagic.Controller();
 
       //sticky scene
-      var scene = new ScrollMagic.Scene({triggerElement: "#sticky-container", duration: 1000})
+      var scene = new ScrollMagic.Scene({triggerElement: "#sticky-container", duration: 5000})
       scene.triggerHook(0.1);
-      scene.setPin("#iphone")
+      scene.setPin("#sticky-container")
       .addIndicators({name: "pin"}) // add indicators (requires plugin)
       .addTo(controller);
-      
-      //left to right
-      // var fromLeftTimeline = new TimelineMax();
-      // var fromLeftFrom = TweenMax.from("#iphone", 1, {
-      //     x: 500
-      // });
-      // var fromLeftTo = TweenMax.to("#iphone", 1, {
-      //     x: 0
-      // });
-      // fromLeftTimeline
-      //     .add(fromLeftFrom)
-      //     .add(fromLeftTo);
 
-
-      // // slide scene
-      // var scene2 = new ScrollMagic.Scene({
-      //       triggerElement: "#sticky-container"
-      //   })
-      // scene2.triggerHook(0.8);
-      // scene2.setTween(fromLeftTimeline)
-      // .duration(1000)
-      // //    .reverse(false)
-      // .addIndicators({name: "slidein"}) // add indicators (requires plugin)
-      // .addTo(controller);
-
-      //fade animation
+      //scale animation
       var fadeInTimeline = new TimelineMax();
       var fadeInFrom = TweenMax.from("#iphone", 1, {
           scale: 1.5,  transformOrigin:'50% 0%'
@@ -59,18 +35,48 @@ $(document).ready(function () {
       var fadeInTo = TweenMax.to("#iphone", 1, {
           scale: 1, transformOrigin:'50% 0%'
       });
+      var tweenTranslate = TweenMax.to('#iphone-container', 1, { css: { transform: 'translate3d(-30%, 0 , 0)' }})
+
       fadeInTimeline
           .add(fadeInFrom)
-          .add(fadeInTo);
+          .add(fadeInTo)
+          .add(tweenTranslate);
       
       new ScrollMagic.Scene({
               triggerElement: "#sticky-container"
           })
       .setTween(fadeInTimeline)
       .offset(400)
-      .duration(1000)
+      .duration("300%")
       .addIndicators({name: "fade in"}) // add indicators (requires plugin)
       .addTo(controller);
+
+    //left to right
+    // var fromLeftTimeline = new TimelineMax();
+    // var fromLeftFrom = TweenMax.from("#iphone", 1, {
+    //     x: 500
+    // });
+    // var fromLeftTo = TweenMax.to("#iphone", 1, {
+    //     x: 0
+    // });
+    // fromLeftTimeline
+    //     .add(fromLeftFrom)
+    //     .add(fromLeftTo);
+
+
+    //var tweenTranslate = new TweenMax.to('#iphone-container', 1, { css: { transform: 'translate3d(-150px, 0 , 0)' }})
+
+    // // slide scene
+    // var scene2 = new ScrollMagic.Scene({
+    //       triggerElement: "#iphone-container"
+    //   })
+    // scene2.offset(1000);
+    // // scene2.triggerHook(0.8);
+    // scene2.setTween(tweenTranslate)
+    // .duration(500)
+    // //    .reverse(false)
+    // .addIndicators({name: "slide left"}) // add indicators (requires plugin)
+    // .addTo(controller);
 });
 
   

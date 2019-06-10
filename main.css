@@ -198,12 +198,90 @@ button:hover{
     margin-left: auto;
     margin-right: auto;
     width: 400px;
-    display: block;
+    /* display: block; */
 }
 
 .sticky-container{
     /* position: sticky; */
+    position: relative;
     top:50px;
+}
+
+.iphone-container{
+    position: relative;
+    left: 100px;
+    top:auto;
+    left:auto;
+    bottom: auto;
+    right:auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    display: block;
+}
+
+.appIconContainer {
+    position: absolute;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+}
+
+.appIconContainer:hover{
+    opacity: 0.8;
+}
+
+.apps-container{
+    position: absolute;
+    overflow: hidden;
+    top: 50px;
+    left: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+#firstIcon{
+    top: 30px;
+    left: 35px;
+}
+
+#secondIcon{
+    top: 30px;
+    left: 85px;
+}
+
+#thirdIcon{
+    top: 30px;
+    left: 135px;
+}
+
+#fourthIcon{
+    top: 80px;
+    left: 35px;
+}
+
+#fifthIcon{
+    top: 80px;
+    left: 85px;
+}
+
+#sixthIcon{
+    top: 80px;
+    left: 135px;
+}
+
+.appImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; 
+    height: 80%;   
+}
+
+.appName{
+    text-align: center;
+    color: white;
+    font-size: 7px;
 }
 
 .scroll-helper{
