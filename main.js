@@ -31,6 +31,7 @@ $(document).ready(function () {
 
       //sticky scene
       var animationDuration = 4*window.innerHeight;
+      $('#projects-container').height = animationDuration;
       var scene = new ScrollMagic.Scene({triggerElement: "#sticky-container", duration: animationDuration})
       scene.triggerHook(0.1);
       scene.setPin("#sticky-container")
