@@ -25,18 +25,17 @@ $(document).ready(function () {
         openNav();
       });
 
-      var isPhone = window.matchMedia("(max-width: 480px)").matches;
+    var isPhone = window.matchMedia("(max-width: 480px)").matches;
 
-      var controller = new ScrollMagic.Controller();
+    var controller = new ScrollMagic.Controller();
 
-      //sticky scene
-      var animationDuration = 4*window.innerHeight;
-      $('#projects-container').height = animationDuration;
-      var scene = new ScrollMagic.Scene({triggerElement: "#sticky-container", duration: animationDuration})
-      scene.triggerHook(0.1);
-      scene.setPin("#sticky-container")
-      .addIndicators({name: "pin"}) // add indicators (requires plugin)
-      .addTo(controller);
+    //sticky scene
+    var animationDuration = 4*window.innerHeight;
+    var scene = new ScrollMagic.Scene({triggerElement: "#sticky-container", duration: animationDuration})
+    scene.triggerHook(0.1);
+    scene.setPin("#sticky-container")
+    .addIndicators({name: "pin"}) // add indicators (requires plugin)
+    .addTo(controller);
 
     var animationtimeLine = new TimelineMax();
 
@@ -76,7 +75,7 @@ $(document).ready(function () {
             triggerElement: "#sticky-container"
         })
     .setTween(animationtimeLine)
-    .offset(400)
+    // .offset(400)
     .duration(4*window.innerHeight)
     .addIndicators({name: "animations"}) // add indicators (requires plugin)
     .addTo(controller);
