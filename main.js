@@ -15,6 +15,11 @@ $(document).ready(function () {
     //menu button animation
     var menuButton = $('#menuButton');
     
+    var iphone = $('#iphone');
+    var iphoneApps = $('#iphone-apps');
+
+    iphoneApps.width = iphone.width;
+
     menuButton.click(function() {
         menuButton.toggleClass("menu-button-animate");
         openNav();
@@ -25,7 +30,8 @@ $(document).ready(function () {
       var controller = new ScrollMagic.Controller();
 
       //sticky scene
-      var scene = new ScrollMagic.Scene({triggerElement: "#sticky-container", duration: "400%"})
+      var animationDuration = 4*window.innerHeight;
+      var scene = new ScrollMagic.Scene({triggerElement: "#sticky-container", duration: animationDuration})
       scene.triggerHook(0.1);
       scene.setPin("#sticky-container")
       .addIndicators({name: "pin"}) // add indicators (requires plugin)
@@ -70,7 +76,7 @@ $(document).ready(function () {
         })
     .setTween(animationtimeLine)
     .offset(400)
-    .duration("300%")
+    .duration(4*window.innerHeight)
     .addIndicators({name: "animations"}) // add indicators (requires plugin)
     .addTo(controller);
 });

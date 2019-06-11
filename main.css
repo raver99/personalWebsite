@@ -199,7 +199,7 @@ button:hover{
     margin-left: auto;
     margin-right: auto;
     width:auto;
-    max-height: 500px;
+    /* max-height: 500px; */
     display: block;
 }
 
@@ -217,11 +217,19 @@ button:hover{
     transform-origin: 50% 50%;
 }
 
-.iphone-2{
-    top:0;
+#iphone-apps {
+    top:0px;
+    left:0;
+    bottom: auto;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     height: 700px;
+    display: block;
     opacity: 0;
-    transform: translate(0, -100%);
+    position: absolute;
 }
 
 .projects-text{
@@ -262,8 +270,13 @@ button:hover{
         width: 80%;
     }
 
+    #iphone-apps{
+        height: auto;
+        width: 80%;
+    }
+
     .iphone-container{
-        height: 50vh;
+        height: auto;
     }
 
     .projects-text{
