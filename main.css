@@ -262,7 +262,12 @@ button:hover{
         width: 80%;
     }
 
+    .iphone-container{
+        height: 50vh;
+    }
+
     .projects-text{
+        top:0px;
         position: unset;
         transform: translate(0, 0);
     }
