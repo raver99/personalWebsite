@@ -149,6 +149,7 @@ button:hover{
 .second-container{
     min-height: 100vh;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .row {
@@ -235,23 +236,35 @@ button:hover{
 
 .projects-text{
     position: absolute;
-    width: auto;
+    width: 50vw;
     height: 100%;
-    top: 50px;
-    left: auto;
+    top: 30px;
+    left: 0;
     right: auto;
     margin:auto;
     display: block;
-    text-align: center;
+    /* text-align: center; */
     transform: translate(50vw, 0);
-    opacity: 0.1;
+    opacity: 0.0;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .project-header-text{
     color: #EB503E;
     z-index: 2000;
     top:50px;
-    /* display: block; */
+    left: 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.project-subheader-text{
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin-bottom: 30px;
 }
 
 .scroll-helper{
@@ -281,9 +294,11 @@ button:hover{
     }
 
     .projects-text{
-        top:0px;
+        top:0;
+        padding-top: 20px;
         position: unset;
         transform: translate(0, 0);
+        width: auto;
     }
   }
 
