@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>instagram (1)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Main-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy-8" transform="translate(-309.000000, -4800.000000)" fill="#FFFFFF">
+            <g id="instagram-(1)" transform="translate(309.000000, 4800.000000)">
+                <path d="M33,0 L15,0 C6.717,0 0,6.717 0,15 L0,33 C0,41.283 6.717,48 15,48 L33,48 C41.283,48 48,41.283 48,33 L48,15 C48,6.717 41.283,0 33,0 Z M43.5,33 C43.5,38.79 38.79,43.5 33,43.5 L15,43.5 C9.21,43.5 4.5,38.79 4.5,33 L4.5,15 C4.5,9.21 9.21,4.5 15,4.5 L33,4.5 C38.79,4.5 43.5,9.21 43.5,15 L43.5,33 Z" id="Shape"></path>
+                <path d="M24,12 C17.373,12 12,17.373 12,24 C12,30.627 17.373,36 24,36 C30.627,36 36,30.627 36,24 C36,17.373 30.627,12 24,12 Z M24,31.5 C19.866,31.5 16.5,28.134 16.5,24 C16.5,19.863 19.866,16.5 24,16.5 C28.134,16.5 31.5,19.863 31.5,24 C31.5,28.134 28.134,31.5 24,31.5 Z" id="Shape"></path>
+                <ellipse id="Oval" cx="36.9" cy="11.1" rx="1.599" ry="1.599"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

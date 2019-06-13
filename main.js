@@ -34,7 +34,7 @@ $(document).ready(function () {
     var scene = new ScrollMagic.Scene({triggerElement: "#sticky-container", duration: animationDuration})
     scene.triggerHook(0.1);
     scene.setPin("#sticky-container")
-    .addIndicators({name: "pin"}) // add indicators (requires plugin)
+    // .addIndicators({name: "pin"}) // add indicators (requires plugin)
     .addTo(controller);
 
     var animationtimeLine = new TimelineMax();
@@ -77,7 +77,7 @@ $(document).ready(function () {
     .setTween(animationtimeLine)
     // .offset(400)
     .duration(4*window.innerHeight)
-    .addIndicators({name: "animations"}) // add indicators (requires plugin)
+    // .addIndicators({name: "animations"}) // add indicators (requires plugin)
     .addTo(controller);
 });
 

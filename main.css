@@ -2,6 +2,10 @@ body{
     margin: 0px;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 .fixedPosition{
     overflow: hidden;
  }
@@ -62,7 +66,7 @@ button:focus {
 
 .header{
     background-color: black;
-    background-image: url('res/nameBackground.svg');
+    background-image: url('res/nameBackgroundDark.svg');
     background-size: 110%;
     background-repeat: no-repeat;
     background-position: center;
@@ -177,7 +181,7 @@ button:hover{
 
 .projects-container{
     /* height: 500vh; */
-    padding-top: 100px;
+    /* padding-top: 100px; */
     background-color: black;
     /* display: flex;
     align-items: center;
@@ -201,8 +205,8 @@ button:hover{
     margin-left: auto;
     margin-right: auto;
     width:auto;
-    /* max-height: 500px; */
     display: block;
+    position: relative;
 }
 
 .iphone{
@@ -238,13 +242,13 @@ button:hover{
     position: absolute;
     width: 50vw;
     height: 100%;
-    top: 30px;
+    top: 120px;
     left: 0;
     right: auto;
     margin:auto;
     display: block;
     /* text-align: center; */
-    transform: translate(50vw, 0);
+    transform: translate(40vw, 0);
     opacity: 0.0;
     padding-left: 40px;
     padding-right: 40px;
@@ -274,7 +278,107 @@ button:hover{
 /* third slide  */
 
 .third-container{
+    min-height: 100vh;
+    background-color: white;
+    background-image: url('res/nameBackgroundLight.svg');
+    background-size: auto 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMeBigText
+{
+    color:black;
+    font-family: 'Lato', sans-serif;
+    font-size: 4rem;
+    font-weight:600;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.styledQuotes{
+    color: #EB503E;
+    font-weight: 900;
+}
+
+.highlightedText{
+    background-color: #EB503E;
+    color: white;
+    padding: 0 0.6rem;
+}
+
+.lightBlackTextButton{
+    font-family: 'Lato', sans-serif;
+    background: transparent;
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+    transform: color;
+    transition-duration: 500ms;
+    display: inline-block;
+}
+
+.lightBlackTextButton:hover{
+    color: #EB503E;
+}
+
+#moreAboutMeButton
+{
+    width: 100%;
+    background: transparent;
+    width: 100%;
+    text-align: right;
+    padding-right: 20%;
+}
+
+.lightButtonArrow{
+    height: 100%;
+    vertical-align: middle;
+}
+
+.contact-container
+{
+    background: black;
     height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profilePic
+{
+    height: 40%;
+    padding-bottom: 20px; 
+}
+
+.nameMotto{
+    max-width:80%;
+}
+
+.socialLinks{
+    position: absolute;
+    width: 100%;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.socialLink{
+    height: 35px;
+    /* display: inline-block; */
+    margin: 0 10px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -299,6 +403,14 @@ button:hover{
         position: unset;
         transform: translate(0, 0);
         width: auto;
+    }
+
+    .aboutMeBigText{
+        font-size: 1.8rem;
+    }
+
+    .header-title{
+        font-size: 50px;
     }
   }
 

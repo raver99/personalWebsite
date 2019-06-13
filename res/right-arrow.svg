@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="19px" viewBox="0 0 26 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Main-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy-8" transform="translate(-880.000000, -2554.000000)" fill="#EB503E">
+            <g id="right-arrow" transform="translate(880.000000, 2554.000000)">
+                <g id="Capa_1">
+                    <path d="M17.5171739,0.275086957 C17.1627826,-0.0916956522 16.5729565,-0.0916956522 16.2061739,0.275086957 C15.8517826,0.629478261 15.8517826,1.21930435 16.2061739,1.57286957 L22.8536957,8.2203913 L0.917782609,8.2203913 C0.406434783,8.22121739 0,8.62765217 0,9.139 C0,9.65034783 0.406434783,10.07 0.917782609,10.07 L22.8536957,10.07 L16.2061739,16.7051304 C15.8517826,17.071913 15.8517826,17.6625652 16.2061739,18.0161304 C16.5729565,18.382913 17.1636087,18.382913 17.5171739,18.0161304 L25.7383913,9.79491304 C26.1051739,9.44052174 26.1051739,8.85069565 25.7383913,8.49713043 L17.5171739,0.275086957 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
