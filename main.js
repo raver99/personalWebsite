@@ -1,13 +1,27 @@
 var mySidenav = $('#mySidenav');
+var menuButtonAnimation;
+var isMenuOpen = false;
 
 function openNav() {
-  mySidenav.height("100%");
-  $('body').addClass("fixedPosition");
+    if(!isMenuOpen){
+        isMenuOpen = true;
+        mySidenav.height("100%");
+        $('body').addClass("fixedPosition");
+        menuButtonAnimation.playSegments([0,85],true);
+        // menuButtonAnimation.goToAndPlay(0, true);
+    }
+    else{
+        mySidenav.height("0%");
+        $('body').removeClass("fixedPosition");
+        menuButtonAnimation.playSegments([86,170],true);
+        isMenuOpen = false;
+    }
 }
   
 function closeNav() {
     mySidenav.height("0%");
     $('body').removeClass("fixedPosition");
+    isMenuOpen = false;
 }
 
 $(document).ready(function () {
@@ -15,13 +29,23 @@ $(document).ready(function () {
     //menu button animation
     var menuButton = $('#menuButton');
     
+    var svgContainer = document.getElementById('menuButton');
+    menuButtonAnimation = bodymovin.loadAnimation({
+    wrapper: svgContainer,
+    animType: 'svg',
+    speed:2,
+    autoplay: false,
+    path: 'res/menuClose.json'
+    });
+    menuButtonAnimation.setSpeed(1.4);
+
     var iphone = $('#iphone');
     var iphoneApps = $('#iphone-apps');
 
     iphoneApps.width = iphone.width;
 
     menuButton.click(function() {
-        menuButton.toggleClass("menu-button-animate");
+        // menuButton.toggleClass("menu-button-animate");
         openNav();
       });
 

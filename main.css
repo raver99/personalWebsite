@@ -24,7 +24,6 @@ button:focus {
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
     background-color: #EB503E;
     overflow-x: hidden;
     transition: 0.5s;
@@ -37,7 +36,7 @@ button:focus {
 }
   
 .sidenavContainer{
-    padding-top: 50px;
+    padding-top: 100px;
     padding-right: 30px;
     display: flex;
     flex-direction: column;
@@ -120,7 +119,9 @@ button:focus {
     top: 15px;
     right: 15px;
     outline: none;
-    z-index: 1000;
+    z-index: 2000;
+    height: 60px;
+    width: 60px;
     
     transition: transform 0.5s, opacity 0.2s;
     transition-timing-function: ease-out
