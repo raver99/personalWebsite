@@ -350,10 +350,11 @@ button:hover{
 .contact-container
 {
     background: black;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 50px;
     padding-bottom: 50px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .center{
@@ -365,18 +366,27 @@ button:hover{
 .profilePic
 {
     height: 40%;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
+    max-height: 240px;
 }
 
 .nameMotto{
     max-width:80%;
 }
 
+.socialLinksContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
+    margin-top: 40px;
+}
+
 .socialLinks{
-    position: absolute;
     width: 100%;
     bottom: 60px;
     display: flex;
+    align-content: center;
     justify-content: center;
 }
 
