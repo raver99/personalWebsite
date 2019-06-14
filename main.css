@@ -73,11 +73,32 @@ button:focus {
     transition-delay: 0.2s;
   }
 
-
   .smallLogoFadeIn{
       opacity: 1;
   }
+
+  .menuItem{
+    transform: scaleY(0);
+    transform-origin: bottom;
+    /* opacity: 0; */
+  }
   
+  .menuItemGrowAnimation{
+      animation: grow-bottom ease 500ms both;
+      animation-delay: 0.5s;
+      animation-direction: alternate;
+      /* opacity: 1; */
+  }
+
+  @keyframes grow-bottom {
+        from {
+        transform: scaleY(0);
+        }
+        to {
+        transform: scaleY(1);
+        }
+    }
+
   /* .sidenav .closebtn {
     position: absolute;
     top: 0;

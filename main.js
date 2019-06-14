@@ -8,6 +8,8 @@ function openNav() {
         isMenuOpen = true;
         mySidenav.height("100%");
         smallLogoMenu.addClass("smallLogoFadeIn");
+        $(".menuItem").addClass('menuItemGrowAnimation');
+        $(".menuItem").removeClass('menuItemShrinkAnimation');
         mySidenav.addClass("sidenav-bottom");
         $('body').addClass("fixedPosition");
         menuButtonAnimation.playSegments([0,85],true);
@@ -15,6 +17,8 @@ function openNav() {
     else{
         mySidenav.removeClass("sidenav-bottom");
         smallLogoMenu.removeClass("smallLogoFadeIn");
+        $(".menuItem").removeClass('menuItemGrowAnimation');
+        $(".menuItem").addClass('menuItemShrinkAnimation');
         $('body').removeClass("fixedPosition");
         isMenuOpen = false;
 
