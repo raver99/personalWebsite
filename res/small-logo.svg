@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="319px" height="319px" viewBox="0 0 319 319" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Main-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy-8" transform="translate(-353.000000, -125.000000)">
+            <g id="Group" transform="translate(304.000000, 125.000000)">
+                <g id="Group-15" transform="translate(49.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#FFFFFF" x="0.328947368" y="0" width="318.128655" height="318.232044" rx="80"></rect>
+                    <ellipse id="Oval" fill="#4990E2" cx="124.522615" cy="186.388725" rx="70.1366498" ry="70.1594437"></ellipse>
+                    <ellipse id="Oval" fill="#F14723" style="mix-blend-mode: hard-light;" cx="160.560626" cy="132.31414" rx="70.1366498" ry="70.1594437"></ellipse>
+                    <ellipse id="Oval" fill="#7ED321" style="mix-blend-mode: multiply;" cx="194.734603" cy="186.388725" rx="70.1366498" ry="70.1594437"></ellipse>
+                    <path d="M230.414725,125.97353 C230.601746,128.062054 230.697276,130.176937 230.697276,132.31414 C230.697276,171.062131 199.296029,202.473584 160.560626,202.473584 C147.532337,202.473584 135.333724,198.920162 124.880505,192.729335 C124.693484,190.640821 124.597953,188.525933 124.597953,186.388725 C124.597953,147.640735 155.999201,116.229282 194.734603,116.229282 C207.762893,116.229282 219.961506,119.782703 230.414725,125.97353 Z" id="Combined-Shape" fill="#F8E81C" style="mix-blend-mode: hard-light;"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

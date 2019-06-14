@@ -1,4 +1,5 @@
 var mySidenav = $('#mySidenav');
+var smallLogoMenu = $("#smallLogoMenu");
 var menuButtonAnimation;
 var isMenuOpen = false;
 
@@ -6,15 +7,21 @@ function openNav() {
     if(!isMenuOpen){
         isMenuOpen = true;
         mySidenav.height("100%");
+        smallLogoMenu.addClass("smallLogoFadeIn");
+        mySidenav.addClass("sidenav-bottom");
         $('body').addClass("fixedPosition");
         menuButtonAnimation.playSegments([0,85],true);
-        // menuButtonAnimation.goToAndPlay(0, true);
     }
     else{
-        mySidenav.height("0%");
+        mySidenav.removeClass("sidenav-bottom");
+        smallLogoMenu.removeClass("smallLogoFadeIn");
         $('body').removeClass("fixedPosition");
-        menuButtonAnimation.playSegments([86,170],true);
         isMenuOpen = false;
+
+        setTimeout(function(){
+            mySidenav.height("0%");
+            menuButtonAnimation.playSegments([86,170],true);
+        }, 500); 
     }
 }
   
@@ -38,6 +45,12 @@ $(document).ready(function () {
     path: 'res/menuIconAnimation.json'
     });
     menuButtonAnimation.setSpeed(1.4);
+
+    $('#mySidenav').on('touchmove', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+    });
 
     var iphone = $('#iphone');
     var iphoneApps = $('#iphone-apps');
