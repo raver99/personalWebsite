@@ -35,7 +35,7 @@ $(document).ready(function () {
     animType: 'svg',
     speed:2,
     autoplay: false,
-    path: 'res/menuClose.json'
+    path: 'res/menuIconAnimation.json'
     });
     menuButtonAnimation.setSpeed(1.4);
 
