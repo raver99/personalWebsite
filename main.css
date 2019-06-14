@@ -39,7 +39,7 @@ button:focus {
     height: 100%;
     padding-right: 30px;
     background-image: url('res/nameBackgroundLight.svg');
-    background-size: auto 120%;
+    background-size: auto 200%;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
@@ -431,6 +431,18 @@ button:hover{
     display: flex;
     align-content: center;
     justify-content: center;
+}
+
+.menuSocialLinks{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    justify-content: flex-end;
+}
+
+.menuSocialLinks .socialLink{
+    height: 25px;
 }
 
 .socialLink{

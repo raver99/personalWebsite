@@ -13,34 +13,34 @@
 <body>
     <div>
         <div id="mySidenav" class="sidenav sidenav-bottom">
-            <img id="smallLogoMenu" class="smallLogo" src="res/small-logo.svg">
+            <a href="#first-container" onclick="openNav()">
+                <img id="smallLogoMenu" class="smallLogo" src="res/small-logo.svg">
+            </a>
             <div class="sidenavContainer">
                 <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-                <a class="menuItem" href="#">Home</a>
-                <a class="menuItem" href="#">About me</a>
-                <a class="menuItem" href="#">Services</a>
-                <a class="menuItem" href="#">Projects</a>
-                <a class="menuItem" href="#">Blog</a>
-                <a class="menuItem" href="#">Contact</a>
-                <!-- <div class="socialLinksContainer"> -->
-                        <!-- <div class="center socialLinks">
-                            <a href="http://facebook.com/rolandhuhn">
-                                <img class="center socialLink" src="res/facebook-letter-logo.svg">
-                            </a>
-                            <a href="https://www.linkedin.com/in/rolandhuhn/">
-                                <img class="center socialLink" src="res/linkedin-letters.svg">
-                            </a>
-                            <a href="mailto:roland.huhn87@gmail.com">
-                                <img class="center socialLink" src="res/email.svg">
-                                </a>
-                            <a href="http://behance.com/rolandhuhn">
-                                <img class="center socialLink" src="res/behance-logo.svg">
-                            </a>
-                            <a href="https://www.instagram.com/raver999/">
-                                <img class="center socialLink" src="res/instagram.svg">
-                            </a>
-                        </div> -->
-                    <!-- </div> -->
+                <a class="menuItem" href="#" onclick="openNav()">Home</a>
+                <a class="menuItem" href="#" onclick="openNav()">About me</a>
+                <a class="menuItem" href="#second-container" onclick="openNav()">Services</a>
+                <a class="menuItem" href="#projects-container" onclick="openNav()">Projects</a>
+                <a class="menuItem" href="#" onclick="openNav()">Blog</a>
+                <a class="menuItem" href="#contact-container" onclick="openNav()">Contact</a>
+                <div class="menuSocialLinks socialLinks"> 
+                    <a href="http://facebook.com/rolandhuhn">
+                        <img class="center socialLink" src="res/facebook-letter-logo.svg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/rolandhuhn/">
+                        <img class="center socialLink" src="res/linkedin-letters.svg">
+                    </a>
+                    <a href="mailto:roland.huhn87@gmail.com">
+                        <img class="center socialLink" src="res/email.svg">
+                        </a>
+                    <a href="http://behance.com/rolandhuhn">
+                        <img class="center socialLink" src="res/behance-logo.svg">
+                    </a>
+                    <a href="https://www.instagram.com/raver999/">
+                        <img class="center socialLink" src="res/instagram.svg">
+                    </a>
+                </div>
             </div>
                 
         </div>
@@ -49,14 +49,14 @@
 
         </div>
 
-        <div class="header">
+        <div id="first-container" class="header">
             <img class="header-logo" src="res/logo2.svg" alt="Logo">
             <button class="light-button">
                 <a href="#contact-container">Get in Touch</a>
             </button>
         </div>
 
-        <div class="second-container">
+        <div id="second-container" class="second-container">
             <h1 class="header-title">my services</h1>
 
             <div class="container">

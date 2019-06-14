@@ -9,7 +9,7 @@ function openNav() {
         mySidenav.height("100%");
         smallLogoMenu.addClass("smallLogoFadeIn");
         $(".menuItem").addClass('menuItemGrowAnimation');
-        $(".menuItem").removeClass('menuItemShrinkAnimation');
+        $(".menuSocialLinks").addClass('menuItemGrowAnimation');
         mySidenav.addClass("sidenav-bottom");
         $('body').addClass("fixedPosition");
         menuButtonAnimation.playSegments([0,85],true);
@@ -18,14 +18,14 @@ function openNav() {
         mySidenav.removeClass("sidenav-bottom");
         smallLogoMenu.removeClass("smallLogoFadeIn");
         $(".menuItem").removeClass('menuItemGrowAnimation');
-        $(".menuItem").addClass('menuItemShrinkAnimation');
+        $(".menuSocialLinks").removeClass('menuItemGrowAnimation');
         $('body').removeClass("fixedPosition");
         isMenuOpen = false;
 
         setTimeout(function(){
             mySidenav.height("0%");
             menuButtonAnimation.playSegments([86,170],true);
-        }, 500); 
+        }, 100); 
     }
 }
   
