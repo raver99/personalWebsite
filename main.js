@@ -1,5 +1,6 @@
 var mySidenav = $('#mySidenav');
 var smallLogoMenu = $("#smallLogoMenu");
+var projectsContainer = $("#projects-container");
 var menuButtonAnimation;
 var isMenuOpen = false;
 
@@ -55,6 +56,8 @@ $(document).ready(function () {
         e.stopPropagation();
         return false;
     });
+
+    //sizing
 
     var iphone = $('#iphone');
     var iphoneApps = $('#iphone-apps');
@@ -120,6 +123,16 @@ $(document).ready(function () {
     .duration(4*window.innerHeight)
     // .addIndicators({name: "animations"}) // add indicators (requires plugin)
     .addTo(controller);
+
+    // projects container sizing
+    if(!isPhone){
+        var projectContainerHeight = projectsContainer.height();
+        var projectTextContainerHeight = $("#projects-text").height();
+        var iPhoneHeight = iphone.height();
+        var newProjectsContainerHeight = projectContainerHeight + projectTextContainerHeight - iPhoneHeight;
+        projectsContainer.height(newProjectsContainerHeight);
+    }
+    
 });
 
   

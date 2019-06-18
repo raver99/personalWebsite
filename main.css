@@ -289,7 +289,7 @@ button:hover{
 .projects-text{
     position: absolute;
     width: 50vw;
-    height: 100%;
+    height: auto;
     top: 120px;
     left: 0;
     right: auto;
